@@ -10,6 +10,7 @@ An experimental project — not a live financial product.
 
 <p align="center">
   <a href="docs/architecture.md">Architecture</a> ·
+  <a href="docs/ai-and-models.md">AI &amp; models</a> ·
   <a href="docs/project-brief.md">Project overview</a> ·
   <a href="Worker/migration/">API notes</a>
 </p>
@@ -28,9 +29,21 @@ CoinVisio brings several crypto market research views into one React application
 
 The project explores how a web interface, an edge API, and a separate Python analysis service can work together. It does not execute trades or provide financial advice. Historical outputs are not evidence of predictive performance.
 
-## Product preview
+## AI and quantitative models
 
-The repository includes the application source and a concise project overview. It does not currently include a hosted demo or production screenshots; the former service is offline. The architecture diagram below describes the codebase at a high level.
+Iris uses Groq-hosted `llama-3.3-70b-versatile` with prompt-time context from Supabase and Tavily search; the project does not fine-tune or train its own LLM. The market analysis code uses per-run linear regression for price signals, K-means for regime grouping, and Isolation Forest for outlier detection. Recommendations are threshold-based rules. See [AI and model details](docs/ai-and-models.md) for features, fitting behavior, and limitations.
+
+## Screenshots
+
+The screenshots below show screens from the React application. Market figures, cards, and the Iris exchange on the landing page are illustrative demo content; they are not live market data or a live AI session. The product walkthrough is an interactive UI tour. The previous hosted service is offline.
+
+<!-- Screenshot gallery -->
+
+| Landing page | Iris overview | Product walkthrough |
+| --- | --- | --- |
+| ![CoinVisio landing page](docs/screenshots/landing-page.png) | ![Iris overview](docs/screenshots/iris-demo.png) | ![CoinVisio product walkthrough](docs/screenshots/intro-walkthrough.png) |
+
+The architecture diagram below describes the codebase at a high level.
 
 ```mermaid
 flowchart LR
