@@ -12,6 +12,7 @@ An experimental project — not a live financial product.
   <a href="docs/architecture.md">Architecture</a> ·
   <a href="docs/ai-and-models.md">AI &amp; models</a> ·
   <a href="docs/project-brief.md">Project overview</a> ·
+  <a href="LICENSE">MIT License</a> ·
   <a href="Worker/migration/">API notes</a>
 </p>
 
@@ -35,13 +36,29 @@ Iris uses Groq-hosted `llama-3.3-70b-versatile` with prompt-time context from Su
 
 ## Screenshots
 
-The screenshots below show screens from the React application. Market figures, cards, and the Iris exchange on the landing page are illustrative demo content; they are not live market data or a live AI session. The product walkthrough is an interactive UI tour. The previous hosted service is offline.
+The screenshots below show screens from the React application, including the authenticated modules. Those module captures use a temporary local preview session and sample API responses; they show the real React screens, but not a live account, live market data, or a running backend. The landing page cards and Iris exchange are also illustrative. The product walkthrough is an interactive UI tour. The previous hosted service is offline.
 
 <!-- Screenshot gallery -->
 
-| Landing page | Iris overview | Product walkthrough |
-| --- | --- | --- |
-| ![CoinVisio landing page](docs/screenshots/landing-page.png) | ![Iris overview](docs/screenshots/iris-demo.png) | ![CoinVisio product walkthrough](docs/screenshots/intro-walkthrough.png) |
+| Landing page | Dashboard |
+| --- | --- |
+| ![CoinVisio landing page](docs/screenshots/landing-page.png) | ![Dashboard module](docs/screenshots/dashboard.png) |
+
+| Coins | Market analysis |
+| --- | --- |
+| ![Coins module](docs/screenshots/coins.png) | ![Market analysis module](docs/screenshots/market-analysis.png) |
+
+| AI insights | Anomaly radar |
+| --- | --- |
+| ![AI insights module](docs/screenshots/ai-insights.png) | ![Anomaly radar module](docs/screenshots/anomalies.png) |
+
+| Profile | Notifications |
+| --- | --- |
+| ![Profile module](docs/screenshots/profile.png) | ![Notifications module](docs/screenshots/notifications.png) |
+
+| Iris overview | Product walkthrough |
+| --- | --- |
+| ![Iris overview](docs/screenshots/iris-demo.png) | ![CoinVisio product walkthrough](docs/screenshots/intro-walkthrough.png) |
 
 The architecture diagram below describes the codebase at a high level.
 
@@ -124,3 +141,7 @@ CoinVisio was built as an experimental product and is not currently deployed. Pr
 ## Financial risk
 
 This project is for software demonstration and research. It is not investment advice, and its signals or model outputs should not be used to make financial decisions.
+
+## License
+
+Released under the [MIT License](LICENSE).
