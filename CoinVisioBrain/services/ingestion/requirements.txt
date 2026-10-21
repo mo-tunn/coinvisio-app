@@ -1,0 +1,7 @@
+supabase
+python-dotenv
+requests
+yfinance
+pandas
+numpy
+redis>=5.0.0

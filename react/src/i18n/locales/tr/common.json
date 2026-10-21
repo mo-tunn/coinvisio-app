@@ -1,0 +1,15 @@
+{
+  "language.switchTo": "Dili {{lang}} olarak değiştir",
+  "nav.dashboard": "KONTROL PANELİ",
+  "nav.coins": "COINLER",
+  "nav.marketAnalysis": "PİYASA ANALİZİ",
+  "nav.aiInsights": "YZ İÇGÖRÜLERİ",
+  "nav.anomalies": "ANOMALİLER",
+  "premium.feature": "Premium Özellik",
+  "legal.title": "Yasal Bilgi",
+  "legal.short": "Yasal",
+  "plan.free": "Ücretsiz Plan",
+  "auth.logout": "Çıkış Yap",
+  "auth.authenticating": "KİMLİK DOĞRULANIYOR...",
+  "user.defaultName": "Kullanıcı"
+}

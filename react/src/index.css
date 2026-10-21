@@ -1,0 +1,479 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #03050a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1f2937 #03050a;
+}
+
+/* Google Fonts - loaded via link tag in index.html instead to avoid CSS ordering issues */
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Font Classes */
+.font-mono-custom {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-main {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Global Subtle Grid - Visible but subtle */
+.grid-bg-global {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+/* Stronger Hero Grid */
+.grid-bg-hero {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(37, 99, 235, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.15) 1px, transparent 1px);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+/* Tech borders for grid accents */
+.grid-accent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.3) 1px, transparent 0);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.glass-panel {
+  background: rgba(5, 7, 15, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero-glow {
+  background: radial-gradient(circle at center, rgba(29, 78, 216, 0.12) 0%, transparent 60%);
+}
+
+.node-pulse {
+  animation: pulse-glow 3s infinite;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.3);
+  }
+
+  70% {
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-flow 4s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Sharp utility classes */
+.sharp-corners {
+  border-radius: 2px;
+}
+
+/* Script Font Styles for Simplifies */
+.script-highlight {
+  font-family: 'Comforter Brush', cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* Tech Card Effects */
+.tech-card {
+  background: linear-gradient(180deg, rgba(3, 5, 10, 1) 0%, rgba(5, 8, 16, 1) 100%);
+  transition: all 0.4s ease;
+}
+
+.tech-card:hover {
+  background: linear-gradient(180deg, rgba(5, 8, 16, 1) 0%, rgba(10, 15, 30, 1) 100%);
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.08);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(59, 130, 246, 0.08) 50%, transparent);
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.tech-card:hover .scan-line {
+  animation: scan-down 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes scan-down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Mobile Chat Animation */
+.chat-bubble-enter {
+  animation: fade-slide-up 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes fade-slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Anomaly Pulse */
+@keyframes subtle-pulse-red {
+
+  0%,
+  100% {
+    background-color: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.2);
+  }
+
+  50% {
+    background-color: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.4);
+  }
+}
+
+.anomaly-box {
+  animation: subtle-pulse-red 3s infinite;
+}
+
+/* System Monitor Animations */
+@keyframes scan-horizontal {
+  0% {
+    width: 0%;
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.monitor-scan {
+  height: 1px;
+  background: #60a5fa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: scan-horizontal 2s infinite linear;
+}
+
+/* Sliding Button Effect */
+.btn-slide-fill {
+  background-image: linear-gradient(to right, #ffffff 50%, #2563eb 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: background-position 0.4s ease-out, color 0.4s ease-out;
+  color: black;
+}
+
+.btn-slide-fill:hover {
+  background-position: right bottom;
+  color: white;
+}
+
+.btn-slide-fill svg {
+  stroke: black;
+  transition: stroke 0.4s ease-out;
+}
+
+.btn-slide-fill:hover svg {
+  stroke: white;
+}
+
+/* Sliding Button Effect (Dark Base) */
+.btn-slide-fill-dark {
+  background-image: linear-gradient(to right, rgba(5, 8, 16, 1) 50%, #2563eb 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: background-position 0.4s ease-out, color 0.4s ease-out;
+  color: #e5e7eb;
+}
+
+.btn-slide-fill-dark:hover {
+  background-position: right bottom;
+  color: white;
+}
+
+.btn-slide-fill-dark svg {
+  stroke: #e5e7eb;
+  transition: stroke 0.4s ease-out;
+}
+
+.btn-slide-fill-dark:hover svg {
+  stroke: white;
+}
+
+/* Smooth Fade for Table Rows */
+.fade-row {
+  animation: fadeInRow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeInRow {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Iris Processing Animation Steps */
+.processing-step {
+  opacity: 0;
+  animation: fadeInStep 0.5s forwards;
+}
+
+.step-1 {
+  animation-delay: 0.5s;
+}
+
+.step-2 {
+  animation-delay: 1.5s;
+}
+
+.step-3 {
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeInStep {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Data Flow Animation for Cable */
+@keyframes dataFlow {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.data-packet {
+  position: absolute;
+  left: -1px;
+  width: 4px;
+  height: 12px;
+  background: #60a5fa;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #60a5fa;
+  animation: dataFlow 3s infinite linear;
+}
+
+/* Strong White Glow for Iris Title */
+.text-glow-white {
+  color: #ffffff;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* 3D Chat Elements */
+.chat-bubble-3d {
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.chat-bubble-3d:hover {
+  transform: scale(1.02);
+}
+
+/* System Module Connection Lines Animation */
+@keyframes flowHorizontal {
+  0% {
+    left: -20%;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+}
+
+@keyframes flowVertical {
+  0% {
+    top: -20%;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 120%;
+    opacity: 0;
+  }
+}
+
+.flow-line-h {
+  position: absolute;
+  height: 1px;
+  background: rgba(59, 130, 246, 0.1);
+  overflow: hidden;
+}
+
+.flow-line-v {
+  position: absolute;
+  width: 1px;
+  background: rgba(59, 130, 246, 0.1);
+  overflow: hidden;
+}
+
+.flow-packet-h {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  animation: flowHorizontal 3s infinite linear;
+}
+
+.flow-packet-v {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(180deg, transparent, #3b82f6, transparent);
+  animation: flowVertical 3s infinite linear;
+}
+
+/* Perspective for 3D Phone */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Slow spin animation */
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

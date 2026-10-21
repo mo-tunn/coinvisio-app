@@ -1,0 +1,21 @@
+{
+  "header.subtitle": "Real-time Analysis & AI Insights",
+  "header.title": "Intelligence",
+  "header.highlight": "Dashboard",
+  "marketOverview.loading": "ANALYZING MARKET DATA...",
+  "marketOverview.empty": "No daily insight available for today.",
+  "marketOverview.title": "Daily AI Briefing",
+  "marketOverview.titleTooltip": "Latest AI-generated market summary.",
+  "marketOverview.sentimentTooltip": "Model sentiment classification based on the latest market data.",
+  "regimeGauge.failedLoad": "Failed to load",
+  "regimeGauge.loading": "LOADING REGIME...",
+  "regimeGauge.unavailable": "DATA UNAVAILABLE",
+  "regimeGauge.title": "Market Regime",
+  "regimeGauge.titleTooltip": "AI-assisted regime detection using volatility and return clusters.",
+  "regimeGauge.avgReturn": "Avg Return",
+  "regimeGauge.avgReturnTooltip": "Average return across the latest regime window.",
+  "regimeGauge.volatility": "Volatility",
+  "regimeGauge.volatilityTooltip": "Average volatility within the current regime.",
+  "regimeGauge.updated": "Updated",
+  "regimeGauge.updatedTooltip": "Timestamp of the latest regime computation."
+}

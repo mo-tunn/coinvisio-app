@@ -1,0 +1,27 @@
+/**
+ * Dashboard Page Styles
+ */
+
+.statsCard {
+    transition: all 0.3s ease;
+}
+
+.statsCard:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Subtle glow animation */
+@keyframes subtleGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(59, 130, 246, 0.05);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    }
+}
+
+.statsCard {
+    animation: subtleGlow 4s ease-in-out infinite;
+}

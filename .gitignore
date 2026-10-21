@@ -1,0 +1,40 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+.dev.vars
+*.pem
+*.key
+*service-account*.json
+*firebase-adminsdk*.json
+
+# Dependencies and generated output
+node_modules/
+**/node_modules/
+dist/
+build/
+coverage/
+.wrangler/
+.vite/
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

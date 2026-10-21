@@ -1,0 +1,14 @@
+name = "coinvisio-worker"
+main = "src/app.js"
+compatibility_date = "2026-02-02"
+
+[[durable_objects.bindings]]
+name = "RATE_LIMITER"
+class_name = "RateLimiterDO"
+
+[triggers]
+crons = ["0 * * * *"]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RateLimiterDO"]

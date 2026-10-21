@@ -1,0 +1,4 @@
+supabase
+python-dotenv
+yfinance
+redis>=5.0.0

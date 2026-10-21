@@ -1,0 +1,26 @@
+{
+  "bell.title": "Notifications",
+  "bell.manage": "View & Manage Settings",
+  "list.title": "NOTIFICATIONS",
+  "list.markAllRead": "Mark all read",
+  "list.empty": "No notifications yet",
+  "list.new": "New",
+  "list.noTitle": "No Title",
+  "list.noMessage": "No message content",
+  "page.title": "NOTIFICATIONS",
+  "page.subtitle": "Manage your alerts and preferences",
+  "page.savedSuccess": "Preferences saved successfully",
+  "page.savedError": "Failed to save settings",
+  "page.dailyBriefing": "Daily Briefing",
+  "page.dailyBriefingDesc": "Once a day summary of market conditions",
+  "page.highSeverity": "High Severity Only",
+  "page.highSeverityDesc": "Only show high-confidence analysis updates (> 90%)",
+  "page.emptyWatchlist": "You don't have any coins in your watchlist yet.",
+  "page.anomalies": "Anomalies",
+  "page.aiInsights": "AI Insights",
+  "page.saving": "Saving...",
+  "page.saveSettings": "Save Settings",
+  "page.globalSettings": "Global Settings",
+  "page.watchlistAlerts": "Watchlist Alerts"
+}
+

@@ -1,0 +1,105 @@
+/* Register Page Specific Styles */
+
+/* Risk tolerance card animation */
+.risk-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.risk-card:hover {
+    transform: translateY(-2px);
+}
+
+.risk-card.selected {
+    transform: scale(1.02);
+}
+
+/* Password strength bar animation */
+.strength-bar {
+    transition: all 0.3s ease;
+}
+
+/* Floating orbs animation */
+@keyframes floatOrb {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0.3;
+    }
+
+    33% {
+        transform: translateY(-30px) translateX(15px) scale(1.1);
+        opacity: 0.5;
+    }
+
+    66% {
+        transform: translateY(-15px) translateX(-10px) scale(0.95);
+        opacity: 0.4;
+    }
+}
+
+.floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
+    animation: floatOrb 10s infinite ease-in-out;
+}
+
+.floating-orb:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    left: -50px;
+    top: 20%;
+    animation-delay: 0s;
+}
+
+.floating-orb:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    right: -30px;
+    top: 60%;
+    animation-delay: 2s;
+}
+
+.floating-orb:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    bottom: 10%;
+    animation-delay: 4s;
+}
+
+/* Input focus animation */
+.input-focus-ring:focus {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3), 0 0 25px rgba(59, 130, 246, 0.1);
+}
+
+/* Register card glow */
+.register-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-card:hover {
+    box-shadow: 0 0 80px rgba(37, 99, 235, 0.08);
+}
+
+/* Success checkmark animation */
+@keyframes checkmark {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.checkmark-animate {
+    animation: checkmark 0.4s ease-out forwards;
+}

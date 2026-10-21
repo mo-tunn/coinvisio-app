@@ -1,0 +1,15 @@
+{
+  "language.switchTo": "Switch language to {{lang}}",
+  "nav.dashboard": "DASHBOARD",
+  "nav.coins": "COINS",
+  "nav.marketAnalysis": "MARKET ANALYSIS",
+  "nav.aiInsights": "AI INSIGHTS",
+  "nav.anomalies": "ANOMALIES",
+  "premium.feature": "Premium Feature",
+  "legal.title": "Legal Info",
+  "legal.short": "Legal",
+  "plan.free": "Free Plan",
+  "auth.logout": "Logout",
+  "auth.authenticating": "AUTHENTICATING...",
+  "user.defaultName": "User"
+}

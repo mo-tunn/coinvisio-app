@@ -1,0 +1,1 @@
+from data_pipeline.fetcher import get_current_price

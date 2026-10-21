@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+supabase
+redis
+groq
+tavily-python
+python-dotenv
+pydantic
+requests

@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+supabase
+python-dotenv
+groq
+tavily-python
+pydantic
+redis>=5.0.0
+yfinance
+requests

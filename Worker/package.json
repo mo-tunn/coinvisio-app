@@ -1,0 +1,22 @@
+{
+  "name": "coinvisio-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "hono": "^4.6.6",
+    "jose": "^5.2.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.6.16",
+    "miniflare": "^3.20250129.0",
+    "vitest": "^2.1.0",
+    "wrangler": "^3.114.17"
+  }
+}

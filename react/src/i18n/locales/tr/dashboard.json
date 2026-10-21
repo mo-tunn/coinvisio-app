@@ -1,0 +1,21 @@
+{
+  "header.subtitle": "Gerçek zamanlı analiz ve YZ içgörüleri",
+  "header.title": "İstihbarat",
+  "header.highlight": "Paneli",
+  "marketOverview.loading": "PİYASA VERİSİ ANALİZ EDİLİYOR...",
+  "marketOverview.empty": "Bugün için günlük içgörü bulunamadı.",
+  "marketOverview.title": "Günlük YZ Brifingi",
+  "marketOverview.titleTooltip": "En güncel YZ destekli piyasa özeti.",
+  "marketOverview.sentimentTooltip": "Modelin en güncel piyasa verisine göre ürettiği duygu sınıflandırması.",
+  "regimeGauge.failedLoad": "Yüklenemedi",
+  "regimeGauge.loading": "REJİM YÜKLENİYOR...",
+  "regimeGauge.unavailable": "VERİ MEVCUT DEĞİL",
+  "regimeGauge.title": "Piyasa Rejimi",
+  "regimeGauge.titleTooltip": "YZ destekli rejim tespiti, oynaklık ve getiri kümelerine göre yapılır.",
+  "regimeGauge.avgReturn": "Ort. Getiri",
+  "regimeGauge.avgReturnTooltip": "Son rejim penceresindeki ortalama getiri.",
+  "regimeGauge.volatility": "Oynaklık",
+  "regimeGauge.volatilityTooltip": "Mevcut rejim içindeki ortalama oynaklık.",
+  "regimeGauge.updated": "Güncelleme",
+  "regimeGauge.updatedTooltip": "Son rejim hesaplamasının zaman damgası."
+}

@@ -1,0 +1,11 @@
+pandas
+numpy
+yfinance
+scikit-learn
+supabase
+python-dotenv
+requests
+groq
+tavily-python
+pandas_ta
+redis>=5.0.0

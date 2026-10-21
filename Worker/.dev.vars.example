@@ -1,0 +1,6 @@
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_ANON_KEY=replace-with-your-project-anon-key
+SUPABASE_SERVICE_ROLE_KEY=replace-with-your-project-service-role-key
+RECAPTCHA_SECRET_KEY=replace-with-your-recaptcha-secret
+CORS_ALLOWED_ORIGINS=http://localhost:5173
+CORS_AUTH_ORIGINS=http://localhost:5173
